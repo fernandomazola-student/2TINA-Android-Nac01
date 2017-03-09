@@ -2,13 +2,19 @@ package br.com.fiap.nac01.rm77282;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
+
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     CheckBox checkBox;
     EditText editText;
     TextView textView;
+
+
 
 
     @Override
@@ -38,9 +46,16 @@ public class MainActivity extends AppCompatActivity {
         double soma = 0;
 
         int idRadio = radioGroup.getCheckedRadioButtonId();
-        
 
-        if(idRadio == R.id.radio_item1){
+       String m = editText.getText().toString();
+
+
+
+        if(m.length() > 6){
+            Toast.makeText(this, R.string.digitos, Toast.LENGTH_SHORT).show();
+        }else if(m.isEmpty()){
+            Toast.makeText(this,  R.string.vazio, Toast.LENGTH_SHORT).show();
+        }else if(idRadio == R.id.radio_item1){
             valor = 24.90;
             soma = Double.parseDouble(editText.getText().toString());
             valor = (valor * soma);
@@ -73,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
         if(checkBox.isChecked() == false){
             soma = 0;
         }
-
 
     }
 

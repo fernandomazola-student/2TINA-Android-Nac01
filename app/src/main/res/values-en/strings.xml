@@ -9,4 +9,6 @@
     <string name="descricao2">Informe a medida em m2</string>
     <string name="frete">Ultra frete mega rápido</string>
     <string name="calcular">Calcular</string>
+    <string name="digitos">Somente até 6 digitos</string>
+    <string name="vazio">Campo Vázio</string>
 </resources>
