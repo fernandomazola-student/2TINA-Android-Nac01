@@ -1,0 +1,12 @@
+<resources>
+
+
+    <string name="descricao">Informe o material que deseja:</string>
+    <string name="item1">Piso Branco Baixo Brilho</string>
+    <string name="item2">Piso Albaina 45x5</string>
+    <string name="item3">Porcelanato Perlato Branco</string>
+    <string name="item4">Revestimento Moisaco</string>
+    <string name="descricao2">Informe a medida em m2</string>
+    <string name="frete">Ultra frete mega rápido</string>
+    <string name="calcular">Calcular</string>
+</resources>
